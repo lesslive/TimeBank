@@ -7,7 +7,7 @@
 <img src="https://img.shields.io/badge/Obsidian-v1.0+-purple.svg" alt="Obsidian">
 <img src="https://img.shields.io/badge/Status-Active-green.svg" alt="Status">
 <h3>写给雨燕族的飞行系统</h3>
-<p>减少负重，持续飞行</p>
+<p>把生意做成和一群人共同创建的生活圈</p>
 <p>— LessLive —</p>
 </div>
 
