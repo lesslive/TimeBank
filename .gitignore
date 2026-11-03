@@ -1,0 +1,25 @@
+.claudian
+.vscode
+.makemd
+.smart-env
+.space
+.DS_Store
+Thumbs.db
+.trash
+# 插件所需资源
+插件
+# 本人日记
+日志
+
+.obsidian/**
+!/.obsidian/snippets/
+!/.obsidian/community-plugins.json
+!/.obsidian/daily-notes.json
+!/.obsidian/templates.json
+!/.obsidian/hotkeys.json
+!/.obsidian/app.json
+!/.obsidian/appearance.json
+!/.obsidian/snippets/**/*
+
+
+

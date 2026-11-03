@@ -1,0 +1,325 @@
+/***********************
+ * 快捷键页面专用网格布局
+ * 条件：当前设置页的内容中包含 .hotkey-list-container
+ * 其他页面不会匹配到这个结构，因此不会受影响
+ ***********************/
+
+/* 网格容器：快捷键列表 */
+.modal.mod-settings
+  .vertical-tab-content:has(.hotkey-list-container)
+  .hotkey-list-container {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+/* 每一条快捷键项变成卡片 */
+.modal.mod-settings
+  .vertical-tab-content:has(.hotkey-list-container)
+  .hotkey-list-container
+  > .setting-item {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 卡片里的文本区域（命令名 + 描述） */
+.modal.mod-settings
+  .vertical-tab-content:has(.hotkey-list-container)
+  .hotkey-list-container
+  > .setting-item
+  > .setting-item-info {
+  width: 100%;
+  margin: 0 var(--size-4-4) var(--size-4-4);
+  overflow: hidden;
+  overflow-wrap: anywhere;
+}
+
+/* 右侧控制区域（快捷键显示 + 添加 / 删除按钮） */
+.modal.mod-settings
+  .vertical-tab-content:has(.hotkey-list-container)
+  .hotkey-list-container
+  > .setting-item
+  > .setting-item-control {
+  margin-left: auto;
+}
+
+/* 如果将来快捷键页里有小标题（heading），让它占满整行 */
+.modal.mod-settings
+  .vertical-tab-content:has(.hotkey-list-container)
+  .hotkey-list-container
+  > .setting-item.setting-item-heading {
+  grid-column: 1 / -1;
+  border: none;
+  border-radius: 0;
+  padding: 0.75em 0;
+}
+
+/***********************
+ * 核心插件页面：网格布局
+ * 条件：tab 内容中存在
+ *   .setting-group-search input[placeholder*="插件名称或描述"]
+ ***********************/
+
+/* 核心插件列表容器 → 网格 */
+.modal.mod-settings
+  .vertical-tab-content:has(
+    .setting-group-search input[placeholder*="插件名称或描述"]
+  )
+  .setting-group
+  .setting-items {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+/* 每个核心插件条目变成卡片 */
+.modal.mod-settings
+  .vertical-tab-content:has(
+    .setting-group-search input[placeholder*="插件名称或描述"]
+  )
+  .setting-group
+  .setting-items
+  > .setting-item.mod-toggle {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 卡片里的文字区域（名称 + 描述） */
+.modal.mod-settings
+  .vertical-tab-content:has(
+    .setting-group-search input[placeholder*="插件名称或描述"]
+  )
+  .setting-group
+  .setting-items
+  > .setting-item.mod-toggle
+  > .setting-item-info {
+  width: 100%;
+  margin: 0 var(--size-4-4) var(--size-4-4);
+  overflow: hidden;
+  overflow-wrap: anywhere;
+}
+
+/* 卡片右侧控制区域（选项按钮 + 快捷键 + 开关） */
+.modal.mod-settings
+  .vertical-tab-content:has(
+    .setting-group-search input[placeholder*="插件名称或描述"]
+  )
+  .setting-group
+  .setting-items
+  > .setting-item.mod-toggle
+  > .setting-item-control {
+  margin-left: auto;
+}
+
+/* 若将来核心插件列表里有分组标题，则占满整行 */
+.modal.mod-settings
+  .vertical-tab-content:has(
+    .setting-group-search input[placeholder*="插件名称或描述"]
+  )
+  .setting-group
+  .setting-items
+  > .setting-item.setting-item-heading {
+  grid-column: 1 / -1;
+  border: none;
+  border-radius: 0;
+  padding: 0.75em 0;
+}
+
+/***********************
+ * 第三方插件（社区插件）页面：网格布局（仅插件列表）
+ * 条件：tab 中存在
+ *   .setting-group-search input[placeholder*="搜索已安装的插件"]
+ * 只对紧跟在搜索条后面的 .setting-items 生效
+ ***********************/
+
+/* 插件列表容器：紧跟在搜索框后面的 setting-items 才变成网格 */
+.modal.mod-settings
+  .vertical-tab-content:has(
+    .setting-group-search input[placeholder*="搜索已安装的插件"]
+  )
+  .setting-group-search + .setting-items {
+  display: grid;
+  gap: 15px;
+  /* 调整 260px 可改变每行列数 */
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+/* 插件列表里的每个插件项变成卡片 */
+.modal.mod-settings
+  .vertical-tab-content:has(
+    .setting-group-search input[placeholder*="搜索已安装的插件"]
+  )
+  .setting-group-search + .setting-items
+  > .setting-item.mod-toggle {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 卡片里的文字区域（名称 + 描述） */
+.modal.mod-settings
+  .vertical-tab-content:has(
+    .setting-group-search input[placeholder*="搜索已安装的插件"]
+  )
+  .setting-group-search + .setting-items
+  > .setting-item.mod-toggle
+  > .setting-item-info {
+  width: 100%;
+  margin: 0 var(--size-4-4) var(--size-4-4);
+  overflow: hidden;
+  overflow-wrap: anywhere;
+}
+
+/* 卡片右侧控制区（选项 / 快捷键 / 卸载 / 开关）靠右 */
+.modal.mod-settings
+  .vertical-tab-content:has(
+    .setting-group-search input[placeholder*="搜索已安装的插件"]
+  )
+  .setting-group-search + .setting-items
+  > .setting-item.mod-toggle
+  > .setting-item-control {
+  margin-left: auto;
+}
+
+/* 若插件列表中有标题行（非 mod-toggle），让它占满一整行 */
+.modal.mod-settings
+  .vertical-tab-content:has(
+    .setting-group-search input[placeholder*="搜索已安装的插件"]
+  )
+  .setting-group-search + .setting-items
+  > .setting-item:not(.mod-toggle) {
+  grid-column: 1 / -1;
+}
+
+/***********************
+ * CSS 代码片段列表：网格布局
+ * 结构：
+ *   .setting-group
+ *     .setting-item.setting-item-heading  （标题 + 若干操作按钮）
+ *     .setting-items                      （你截图里那一串 setting-item mod-toggle）
+ ***********************/
+
+/* 只针对：带有操作按钮的 heading 后面的那组 setting-items */
+.modal.mod-settings
+  .vertical-tab-content
+  .setting-group
+  .setting-item.setting-item-heading:has(.clickable-icon.extra-setting-button)
+  + .setting-items {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+/* 每个 CSS 代码片段条目变成卡片 */
+.modal.mod-settings
+  .vertical-tab-content
+  .setting-group
+  .setting-item.setting-item-heading:has(.clickable-icon.extra-setting-button)
+  + .setting-items
+  > .setting-item.mod-toggle {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* 卡片里的文本区域（名称 + 描述） */
+.modal.mod-settings
+  .vertical-tab-content
+  .setting-group
+  .setting-item.setting-item-heading:has(.clickable-icon.extra-setting-button)
+  + .setting-items
+  > .setting-item.mod-toggle
+  > .setting-item-info {
+  width: 100%;
+  margin: 0 var(--size-4-4) var(--size-4-4);
+  overflow: hidden;
+  overflow-wrap: anywhere;
+}
+
+/* 卡片右侧控制区域（开关等） */
+.modal.mod-settings
+  .vertical-tab-content
+  .setting-group
+  .setting-item.setting-item-heading:has(.clickable-icon.extra-setting-button)
+  + .setting-items
+  > .setting-item.mod-toggle
+  > .setting-item-control {
+  margin-left: auto;
+}
+
+/* 编辑器设置里「显示」这一组：网格化其中的 setting-item.mod-toggle */
+.modal.mod-settings .vertical-tab-content
+  .setting-group > .setting-item.setting-item-heading + .setting-items:has(.setting-item.mod-toggle:nth-child(10)) {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 15px;
+  align-items: stretch;
+}
+
+/* 只把这一组里的 mod-toggle 项做成卡片，并强制内容靠左 */
+.modal.mod-settings .vertical-tab-content
+  .setting-group > .setting-item.setting-item-heading + .setting-items:has(.setting-item.mod-toggle:nth-child(10))
+  > .setting-item.mod-toggle {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  padding: 10px 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;   /* 内容从上方开始 */
+  align-items: flex-start;       /* 水平方向靠左 */
+  text-align: left !important;   /* 文本左对齐，压过主题里的对齐设置 */
+}
+
+/* 显示组里卡片文本区域：占满宽度 + 左对齐 */
+.modal.mod-settings .vertical-tab-content
+  .setting-group > .setting-item.setting-item-heading + .setting-items:has(.setting-item.mod-toggle:nth-child(6))
+  > .setting-item.mod-toggle .setting-item-info {
+  margin-right: 0;
+  margin-bottom: 6px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* 开关靠右 */
+.modal.mod-settings .vertical-tab-content
+  .setting-group > .setting-item.setting-item-heading + .setting-items:has(.setting-item.mod-toggle:nth-child(10))
+  > .setting-item.mod-toggle .setting-item-control {
+  margin-left: auto;
+}
+/* 显示组里的「笔记属性」：单独一行放到网格最上方，不跟卡片混在一起 */
+.modal.mod-settings .vertical-tab-content
+  .setting-group > .setting-item.setting-item-heading + .setting-items:has(.setting-item.mod-toggle:nth-child(10))
+  > .setting-item:nth-child(3):not(.mod-toggle) {
+  /* 在这组网格里排到最前面 */
+  order: -1;
+  /* 占满整行，和普通设置项一样宽 */
+  grid-column: 1 / -1;
+  margin-bottom: 10px;
+}
+
+/* 显示组里卡片的标题和描述强制左对齐 */
+.modal.mod-settings .vertical-tab-content
+  .setting-group > .setting-item.setting-item-heading + .setting-items:has(.setting-item.mod-toggle:nth-child(10))
+  > .setting-item.mod-toggle .setting-item-name,
+.modal.mod-settings .vertical-tab-content
+  .setting-group > .setting-item.setting-item-heading + .setting-items:has(.setting-item.mod-toggle:nth-child(10))
+  > .setting-item.mod-toggle .setting-item-description {
+  text-align: left !important;
+  align-self: flex-start;
+  width: 100%;
+}

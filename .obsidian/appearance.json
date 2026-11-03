@@ -1,0 +1,16 @@
+{
+  "cssTheme": "Border",
+  "translucency": false,
+  "enabledCssSnippets": [
+    "多列标注",
+    "签名右对齐",
+    "空格美化",
+    "设置美化",
+    "table-center"
+  ],
+  "nativeMenus": false,
+  "accentColor": "",
+  "monospaceFontFamily": "SF Pro",
+  "textFontFamily": "SF Pro",
+  "interfaceFontFamily": "SF Pro"
+}

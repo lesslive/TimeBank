@@ -1,0 +1,46 @@
+{
+  "terminal:close-terminal": [],
+  "terminal:find-in-terminal": [],
+  "terminal:clear-terminal": [],
+  "workspace:next-tab": [
+    {
+      "modifiers": [
+        "Meta",
+        "Shift"
+      ],
+      "key": "]"
+    }
+  ],
+  "easy-typing-obsidian:easy-typing-insert-codeblock": [],
+  "easy-typing-obsidian:easy-typing-goto-new-line-after-cur-line": [],
+  "easy-typing-obsidian:easy-typing-toggle-comment": [],
+  "make-md:mk-new-space": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "N"
+    }
+  ],
+  "various-complements:show-suggestions": [],
+  "various-complements:reload-custom-dictionaries": [],
+  "various-complements:add-word-custom-dictionary": [],
+  "file-explorer:new-file": [],
+  "omnisearch:show-modal": [
+    {
+      "modifiers": [
+        "Alt"
+      ],
+      "key": "F"
+    }
+  ],
+  "terminal:open-terminal.integrated.root": [
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "T"
+    }
+  ],
+  "workspace:new-tab": []
+}
