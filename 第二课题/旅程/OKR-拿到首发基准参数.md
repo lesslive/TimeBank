@@ -1,7 +1,7 @@
 ---
 description: 这是 lesslive 设计者的个人触点体系，仅作参考学习
 created: 2026-10-25 星期日 07:51
-modified: 2026-11-03 星期二 07:59
+modified: 2026-11-06 星期五 17:08
 published: false
 tags: [example]
 kanban-plugin: board
@@ -14,6 +14,7 @@ sticker: lucide//align-start-horizontal
 - [ ] 推出[[第三课题/LessLive/故事/雨燕/雨燕]]
 - [ ] [[重构微信朋友圈]]
 - [ ] [[把生意做成和一群人共同创建的生活圈]]
+- [ ] UGG
 
 
 ## 激活
@@ -25,13 +26,13 @@ sticker: lucide//align-start-horizontal
 
 ## 留存
 
-- [ ] [[社群运营方案]]设计
+- [ ] [[设计方案]]设计
 
 
 ## 转化
 
 - [x] 免费[[开源包]]可下载
-- [ ] [[社群价值体系]]设计
+- [ ] [[欢迎语]]设计
 
 
 ## 推荐
