@@ -6,7 +6,7 @@
 <img src="https://img.shields.io/badge/License-CC%20BY--NC%204.0-blue.svg" alt="License">
 <img src="https://img.shields.io/badge/Obsidian-v1.0+-purple.svg" alt="Obsidian">
 <img src="https://img.shields.io/badge/Status-Active-green.svg" alt="Status">
-<h3>把时间变成资产</h3>
+<p><strong>与 AI 合作，不用重新介绍自己</strong></p>
 
 <p>— LessLive —</p>
 </div>
@@ -14,7 +14,7 @@
 
 ---
 ## 关于 TimeBank
-把你和 AI 对话产出的结论存进对应模块（把AI 接入仓库，它会自动找到正确的位置写入），作为下次与 AI 协作的上下文，不用重复介绍背景。
+TimeBank 是一个为 AI 协作准备的个人仓库。把你与 AI 对话中确认的背景、想法和结论，存进预设的对应模块。后续协作时，让 AI 读取相关内容，就能接着已有的进展继续，不必每次从头讲起。
 ## 工作原理
 ### 首先结构化｜让生活井井有条
 **把生活解构为边界清晰且彼此关联的模块，不再混乱和无序**
