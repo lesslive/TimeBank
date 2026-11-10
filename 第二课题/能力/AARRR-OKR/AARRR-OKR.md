@@ -1,9 +1,10 @@
 ---
 description: 用 AARRR 作为永续 O 管理用户生命周期和目标与关键成果
 created: 2026-10-25 星期日 17:04
-modified: 2026-10-30 星期五 19:42
+modified: 2026-11-10 星期二 14:13
 published: false
-tags: [native]
+tags:
+  - native
 ---
 
 ## 核心定义

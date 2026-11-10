@@ -12,5 +12,6 @@
   "accentColor": "",
   "monospaceFontFamily": "SF Pro",
   "textFontFamily": "SF Pro",
-  "interfaceFontFamily": "SF Pro"
+  "interfaceFontFamily": "SF Pro",
+  "baseFontSizeAction": true
 }
