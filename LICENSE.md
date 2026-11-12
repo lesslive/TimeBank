@@ -29,7 +29,7 @@
 您不能增加法律条款或者技术手段，去限制别人在本协议允许范围内的使用。
 ## 额外声明
 - 本仓库示范内容仅为作者真实实践样本，不构成任何形式的效果保证、专业建议。使用者自行承担使用带来的全部风险。
-- 本仓库唯一官方地址：https://github.com/johorner/lesslive
+- 本仓库唯一官方地址：https://github.com/lesslive/lesslive
 - 作者：johorner（LessLive）
 
 ---
