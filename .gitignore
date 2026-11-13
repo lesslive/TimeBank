@@ -6,9 +6,11 @@
 .DS_Store
 Thumbs.db
 .trash
-# 插件所需资源
+
+# 插件所需的本地资源
 插件
-# 本人日记
+
+# 日记
 日志
 
 .obsidian/**
